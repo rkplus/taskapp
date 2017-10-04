@@ -12,6 +12,9 @@ class Task: Object {
     // 管理用 ID。プライマリーキー
     dynamic var id = 0
     
+    // categoryというStringプロパティを追加してください
+    dynamic var category = ""
+    
     // タイトル
     dynamic var title = ""
     
@@ -27,4 +30,5 @@ class Task: Object {
     override static func primaryKey() -> String? {
         return "id"
     }
+
 }
